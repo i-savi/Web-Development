@@ -1,0 +1,113 @@
+Here all the basic things i need to know for learning web development are:
+
+1. Basic definitions
+2. Browser developer tools
+3. basic command lines for terminal
+4. how websites work
+5. HTTP/ HTTPS
+6. connecting to github
+
+Internet - It is a huge network of computers connected together. Messages to servers are sent through internet. It is like a road network.
+
+Browser - It is a program that lets you access and view websites on the internet. It requests webpages from servers and receive HTML, CSS and JavaScript and turn the code into a visible website. It is like a delivery person. 
+
+Server - computers that stores and serves the website, always running and waiting for request. It is like restaurant. 
+
+APIs - Application programming interface connects the frontend to the backend. It is made while developing a full stack website using Express.js. It uses 4 types of 'requests' - GET, POST, PUT (to update data), DELETE.
+
+---- BROWSER DEVELOPER TOOLS ----
+These are built into browser for inspecting HTML, CSS , debugging JS, etc.
+
+1. Elements tab - It shows HTML and CSS and we can temporarily change these.
+2. Styles panel - It shows CSS applied to a particular element.
+3. Console tab - It lets us converse with javascript for testing.
+4. Network tab - It shows every request browser makes.
+5. Appllication tab - It shows browser storage ( cloud and local storage).
+6. Source tab - It shows javascript files loaded by website.
+
+---- BASIC COMMAND LINES ----
+used in terminal for git, node.js , react.js 
+1. pwd - it shows where you currently are
+2. ls - it shows files and folders in current location
+3. cd - to move into a folder
+4. cd . . - to go back one folder
+5. mkdir - to create a new folder
+6. code. - it opens current folder in vs code
+
+---- HOW WEBSITES WORK ----
+Step 1 : Type website address (URL) uniform resource locator
+https://www.example.com/about
+https is protocol, example is domain name, about is the current pages
+
+Step 2 : Browser finds website
+computers understand only numbers so URL converts into IP address (internet protocol address)
+Browser asks DNS (domain name system) to find IP address. 
+here IP address is like a contact number and DNS is like a contact Application
+
+Step 3 : Browser connects to servers
+Browser knows IP address so it contacts the server (sends HTTP request) e.g. - GET
+
+Step 4 : Server receives request
+receives, processes and prepares response
+
+Step 5 : Server sends files back like HTML, CSS, JS but not backend
+
+Step 6 : Browser builds the page 
+Browser receives the files, reads HTML , applies CSS , runs javascript and displays the webpage. This process is Rendering.
+
+Step 7 : User clicks a button
+e.g. - user clicks login then browser sends request to server, request goes to backend
+
+Step 8 : Backend talks to database
+Database is organized storage
+backend asks - does this user exits ?
+database - yes or no 
+then backend decides what to does
+
+Step 9 : Response comes back
+browser updates the page
+
+How to make website public ?
+My laptop uploads the code to cloud server (render, railway, versel)
+
+---- HTTP/HTTPS ----
+HTTP is a set of rules that browsers and servers use to communicate. Browser sends HTTP request and server sends HTTP response. HTTP defines format of request and response.
+
+HTTPS is HTTP with encryption. In this browser sends encrypted data. HTTP methods that tell server what to do are GET and POST.
+
+---- CONNECTION TO GITHUB ----
+git is version control system. it takes snapshot of every change who and when it happened. it let us collaboate in projects and tracking every version of program.
+code is uploaded on github (website).
+ 
+1. to create git repository in project folder
+: git init 
+
+2. to check repository status ( shows untracked files, modified files, staged files and commit status)
+: git status
+
+3. configure git username and email
+: git config --global user.name "Savi"
+: git config --global user.email "3savilaller..."
+
+4. add all files to staging area / it tells which files to include in the next commit
+: git add.
+
+5. create a commit (it saves snapshot of project)
+: git commit -m "initial commit"
+
+6. connect local project to github
+: git remote add origin repository_URL
+
+7. check connected repository (it shows repo is connected to project)
+: git remote -v 
+
+8. rename branch to main (renames current branch to main)
+: git branch -M main
+
+9. upload code to github (uploads local commits to github)
+: git push -u origin main
+
+After making changes in project -
+git add.
+git commit -m "describe change"
+git push

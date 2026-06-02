@@ -1,0 +1,117 @@
+HTML NOTES
+
+1. semantic HTML
+2. forms
+3. boilerplate code
+4. meta tag
+5. anchor tag
+6. horizontal rule
+7. id attribute
+
+date: 01-06-2026
+
+HyperText Markup Language is used to create structure of web pages.
+
+Name
+Purpose
+Syntax
+Example
+
+date: 02-06-2026
+
+tag - markup enclosed in angled bracket like <tag>
+element - whole sentence like <tag> line </tag> is element
+
+---- SEMANTIC HTML ----
+These are HTML tags that clearly describe the meaning of content inside them.
+1. e.g. - <header> Welcome to my website </header>
+<header> is used for top section of a webpage.
+
+2. <nav> Home about contact </nav>
+<nav> is used for navigation links.
+e.g.- <nav> <a href = "#"> Home </a> 
+<a href = "#" > About </a> </nav>
+
+3. <main> tag is used for main content of page (only one main should exist per page)
+e.g.- <main> <h2> welcome </h2> 
+<p> This is my portfolio. </p> </main>
+
+4. <section> tag groups related content.
+e.g. - <section > <h2> skills</h2> <p> HTML, CSS, JSA</P> </h2> </section>
+
+5. <article> tag is for independent content (blog posts, news articles, product review)
+<article> <h2> My first blog post</h2> <p> content here</p> </article>
+
+6. <aside> is used for side content related to main content.
+e.g.- <aside> Recent posts </aside>
+
+7. <footer> tag is bottom section of page
+<footer> Copyright 2026 </footer>
+
+we use these instead of generic tags.
+e.g.- <div> welcome to my website </div>
+
+Use <div> when no semantic tag fits the purpose.
+
+---- FORMS ----
+these are used to collect information from users.
+e.g.- login page, signup page, contact form , search bar, feedback form
+
+Elements - 
+
+1. <form> element is a container that holds all form fields. It is like a box that groups user inputs together.
+
+2. <input> is used to accept input.
+<input type = "text" name = "name">
+<input type = "email">
+<input type = "password"> in this characters are hidden
+<input type = "number">
+inside input tag name is used when sending form data,keep id, for and name same 
+
+3. <label> describes what the input is for. it is for readability and accessibility.
+e.g.- <label for = "name"> Name: </label>
+<input type = "text" id = "name"> 
+label gives name i.e what we are going to input, for means this label is for this input tag with id = "name"
+
+4. <button> creates a button.
+e.g.- <button> Submit </button>
+
+Placeholder - It shows hint text inside an input.
+e.g.- <input type = "text" placeholder = "Enter your name">
+
+Required field - it makes the field mandatory. form won't submit if left empty.
+e.g.- <input type = "email" required>
+
+Radio Buttons - used when only one option can be selected
+e.g.- <label> <input type = "radio" name = "gender"> Male</label>
+
+Checkboxes - used when multiple options can be selected
+
+Dropdown menu - using <select> <option> India</option> </select>
+
+Text area - for large amount of text
+e.g.- <textarea></textarea>
+
+---- BOILER PLATE CODE ----
+using ! and press enter
+
+---- META TAG ----
+it is used inside head section. It has metadata which is seen by browers and search engines not displayed on webpage. 
+name = "description" tells which type of data is provided 
+content = "description........" it contains the actual description
+
+e.g.- <meta name = "description" content = "This is the actual description.">
+
+---- ANCHOR TAG ----
+it is used to create clickable links.
+e.g.- <a href = "URL" target = "_blank" >Link</a>
+using target , link is opened on another page instead of the same page and the page remains open
+
+Internal page link/ Fragment link - <a href = "#about">About</a>
+# tells the brower don't go to another page instead jump to an element on current page whose id is about
+
+---- HORIZONTAL RULE ----
+<hr> creates a horizonal line
+
+---- ID ATTRIBUTE ---
+it gives a unique name to an element on a page
