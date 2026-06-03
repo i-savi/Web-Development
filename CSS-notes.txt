@@ -1,1 +1,73 @@
 Cascading Style Sheets
+
+selectors (body, nav, section)
+ID selectors (#about)
+element selectors (header, footer)
+pseudo-class (:hover)
+colors, margin, padding,width , border, border radius, text alignment, font styling, background colors, display property
+
+1. *  universal selector is to select all the code.
+
+2. browser automatically adds margin(outside space) so we have to remove it first.
+margin: 0;
+
+3. similarly remove padding (inside space)
+padding: 0;
+
+4. box-sizing: border-box makes width calculations easier, it prevents width from changing from what we have set.
+
+5. line-height: 1.6; 
+it controls spacing between lines
+
+6. text-align: center;
+it centers text horizontally
+
+7. padding: 40px 20px;
+it means top and bottom : 40px
+left and right : 20 px inside
+
+8. text-decoration: none;
+it removes underlines
+
+9. font-weight: bold;
+it makes text bold
+
+10. margin: 0 10px;
+top and bottom : 0px
+left and right: 10px outside
+
+margin: 30px auto;
+top and bottom: 30px
+left and right: auto centers the section
+
+11. :hover applies only when mouse is over the element
+
+12. max-width: 900px;
+it determines maximum width allowed
+
+13. border-radius: 10px;
+it rounds corners
+
+14. #about img{ } 
+it means select image inside about section
+
+15. display: block;
+it makes image behave like a block element
+
+16. border: 4px solid blue;
+it makes the border thickness = 4px, style = solid, color = blue
+
+17. border-radius: 50%
+it makes the image circular
+
+18. margin-bottom: 8px;
+adds spacing below each list item
+
+19. border-left: 4px solid blue;
+creates decorative stripes
+
+20. input, textarea{ }
+it applies style to both inputs and textarea
+
+21. height for hr - height: 1px;
+it makes line 1 pixel thick
